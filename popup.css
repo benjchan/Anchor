@@ -1,0 +1,132 @@
+
+body, html{
+    margin: 0;
+    height: 88px;
+    width: 344px;
+    transition: height 0.5s;
+    font-size: 14px;
+    font-family: "Helvetica", "Arial", sans-serif !important;
+}
+
+#anchor--title{
+  width: 88px;
+  height: 88px;
+  position: absolute;
+  border-right: 1px solid black;
+  box-sizing: border-box;
+}
+
+#anchor--title span,
+#anchor--credit span{
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#anchor--toggle,
+#anchor--info{
+    position: relative;
+    left: 257px;
+    width: 88px;
+    height: 88px;
+    z-index: 1;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+#anchor--info{
+  top: 0px;
+  left: 170px;
+  border-right: 1px solid black;
+}
+
+#anchor--toggle label,
+#anchor--info label {
+    display: block;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    transition: box-shadow .5s, background 0.5s;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-family: "Helvetica", "Arial", sans-serif !important;
+    font-weight: normal;
+    background: #fff;
+    color: #000;
+    box-sizing: border-box;
+    box-shadow: inset 0 2px 10px grey;
+}
+
+#anchor--info label{
+  transition: box-shadow .5s, background 0.1s;
+}
+
+#anchor--toggle label:hover,
+#anchor--info label:hover {
+    box-shadow: inset 0 4px 10px rgba(0,0,0,0.6);
+}
+
+#anchor--toggle label span,
+#anchor--info label span{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+#anchor--toggle input[type=checkbox]:checked + label,
+#anchor--info input[type=checkbox]:checked + label {
+    background: #094E99;
+    color: #FAD304;
+    box-shadow: inset 0 2px 10px rgba(0,0,0,0.5);
+}
+
+input[type=checkbox], button {
+    visibility: hidden;
+}
+
+#anchor--credit{
+  width: 172px;
+  height: 88px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-right: 1px solid black;
+  box-sizing: border-box;
+}
+
+.info--open{
+  height: 600px;
+}
+
+.button--clicked{
+    background: lightgrey !important;
+}
+
+#anchor--instruct{
+  width: 300px;
+  height: auto;
+  position: absolute;
+  top: 88px;
+  margin: 0 2px;
+  padding: 20px;
+  border-top: 1px solid black;
+}
+
+#anchor--instruct p{
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
